@@ -120,7 +120,7 @@ class PythonSerialMonitor():
                 bytesToRead = self.ser.inWaiting() # get the amount of bytes available at the input queue
                 if bytesToRead:
                     line = self.ser.read(bytesToRead) # read the bytes
-                    print("Teensy: " + line.strip())
+                    #print("Teensy: " + line.strip())
             except IOError:
                 # Manually raise the error again so it can be caught outside of this method
                 raise IOError()
