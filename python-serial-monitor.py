@@ -72,7 +72,7 @@ class PythonSerialMonitor():
 
     def run(self):
         baud = 9600
-        baseports = ['/dev/ttyUSB', '/dev/ttyACM', 'COM', '/dev/tty.usbmodem1234']
+        baseports = ['/dev/ttyUSB', '/dev/ttyACM', 'COM', '/dev/tty.usbmodem1234', '/dev/rfcomm']
         self.ser = None
 
         while not self.ser:
